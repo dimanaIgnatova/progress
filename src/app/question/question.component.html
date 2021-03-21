@@ -1,0 +1,25 @@
+<div>
+  <span>Time left: </span>
+  <span>
+    <span *ngIf="timeLeft < 10">0</span>{{ timeLeft }}s
+  </span>
+</div>
+
+<h2>{{currentQuestion.question}}</h2>
+
+<!--<form name="answersForm">
+  <div *ngFor="let answer of currentQuestion.allAnswers">
+    <input type="radio" [(ngModel)]="selectedAnswer" name="answers" value="{{answer}}" (change)="onSelectedAnswer()">
+    <label for="answer">{{answer}}</label><br>
+  </div>
+</form>-->
+
+<mat-radio-group aria-labelledby="example-radio-group-label" [(ngModel)]="selectedAnswer">
+  <mat-radio-button class="option" *ngFor="let answer of currentQuestion.allAnswers" [value]="answer" [ngClass]="{'correct-answer': isAnswerCorrect(answer)}">
+    {{answer}}
+  </mat-radio-button>
+</mat-radio-group>
+
+<div class="card-container">
+  <button class="card" type="button" (click)="nextQuestion()">Next question</button>
+</div>

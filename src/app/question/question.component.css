@@ -1,0 +1,17 @@
+.option {
+  
+  font-family: $font-stack;
+  font-size: 20px;
+  width: 39rem !important;
+  border: 1px solid #eee;
+  background-color: #fafafa;
+  height: 40px;
+  margin: 0 8px 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+.correct-answer {
+  background-color: #bbff33 !important;
+}
