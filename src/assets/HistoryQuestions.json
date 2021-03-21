@@ -1,0 +1,37 @@
+{
+  "questionObjects": [
+    {
+      "id": 1,
+      "question": "History question example 1",
+      "correctAnswer": "correct answer 1",
+      "allAnswers": [
+        "correct answer 1",
+        "wrong answer 1",
+        "wrong answer 2",
+        "wrong answer 3"
+      ]
+    },
+    {
+      "id": 2,
+      "question": "History question example 2",
+      "correctAnswer": "correct answer 2",
+      "allAnswers": [
+        "correct answer 2",
+        "wrong answer 1",
+        "wrong answer 2",
+        "wrong answer 3"
+      ]
+    },
+    {
+      "id": 3,
+      "question": "History question example 3",
+      "correctAnswer": "correct answer 3",
+      "allAnswers": [
+        "correct answer 3",
+        "wrong answer 1",
+        "wrong answer 2",
+        "wrong answer 3"
+      ]
+    }
+  ]
+}
